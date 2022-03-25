@@ -8,7 +8,7 @@ Hometask: Написать Dockerfile для frontend располагается
 
 2) Запустить билд имеджа для frontend:
 
-``` docker build -t frontend:latest -f .\Dockerfile_frontend . ```
+``` docker build -t frontend:latest -f ./frontend/Dockerfile_frontend . ```
 
 3) Для запуска контейнера frontend выполнить следующую команду:
 

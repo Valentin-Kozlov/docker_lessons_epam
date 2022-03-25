@@ -2,7 +2,7 @@ FROM python:alpine3.14
 
 WORKDIR /usr/src/app
 
-COPY requirements.txt .
+COPY ./lib_catalog/requirements.txt .
 
 RUN adduser -D user
 
@@ -23,6 +23,6 @@ ENV TZ=Asia/Yekaterinburg
 
 EXPOSE 8000
 
-COPY --chmod=755 . .
+COPY --chmod=755 ./lib_catalog/ .
 
 ENTRYPOINT [ "/usr/src/app/entry.sh" ]

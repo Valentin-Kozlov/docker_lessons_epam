@@ -27,8 +27,9 @@ Hometask: Написать Dockerfile для backend который распол
 
 3) Теперь мы можем запустить наши контейнеры используя созданную сеть для них и образы:
 
+``` docker run --name database --network back-db -p 5432:5432 -d database:latest ```
 
 ``` docker run --name backend --network back-db -p 8000:8000 -d backend:latest ```
 
 
-``` docker run --name database --network frontend-backend-db -p 5432:5432 --env-file .env -d database:latest ```
+
